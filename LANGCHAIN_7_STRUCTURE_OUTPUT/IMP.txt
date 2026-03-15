@@ -1,0 +1,43 @@
+Those LLM's like OpenAI gpt models which can generate by default stru op, with those LLM we can use langchain "with_structured_output" method.
+
+
+
+LLMs that support structured output (function calling / JSON mode)
+These are integrated in LangChain:
+
+1.OpenAI models
+ChatOpenAI → works with gpt-4o, gpt-4o-mini, gpt-4.1, gpt-3.5-turbo
+Support: with_structured_output(), JSON schema, function calling.
+
+
+2.Anthropic models
+ChatAnthropic → works with claude-3.x family (Claude 3.5 Sonnet, Claude 3.5 Haiku).
+Support: JSON mode and schema-guided generation.
+
+
+3.Google models
+ChatGoogleGenerativeAI → works with Gemini (gemini-1.5-pro, gemini-1.5-flash).
+Support: function calling + JSON mode.
+
+
+4.Mistral AI (via ChatMistralAI)
+mistral-large, mistral-small, open-mixtral
+Support: function calling.
+
+
+5.Cohere models
+ChatCohere → Cohere Command-R family.
+Support: tool/function calling.
+
+
+LLMs that do NOT support structured output directly
+
+1.HuggingFace-hosted models (ChatHuggingFace) → No with_structured_output() (must use PydanticOutputParser or JSON prompting).
+
+2.Ollama models (ChatOllama) → No direct structured output.
+
+3.Local models through vLLM, Llama.cpp, or transformers → Same, JSON prompting only.
+
+
+
+

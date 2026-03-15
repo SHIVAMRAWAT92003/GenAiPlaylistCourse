@@ -1,0 +1,13 @@
+Model
+└── invoke
+    ├── single message (single turn stand alone queries)
+    │   ├── Static Message ie(1_static_prompt)
+    │   └── Dynamic Message (PromptTemplate) (2/3_Dynamic_Prompt)
+    │
+    └── list of messages (multi-turn conversation)
+        ├── Static Message ie(4_ChatBot)
+        │   ├── System Message
+        │   ├── HumanMessage
+        │   └── AIMessage
+        │
+        └── Dynamic Message ie()

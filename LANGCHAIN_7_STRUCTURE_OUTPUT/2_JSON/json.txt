@@ -1,0 +1,3 @@
+It is use when we are using multiple lang's like (python for backend and java for frontend )is used in project and in both place we require our json scheme .
+
+so in such situation we don't use Pydantic or typed_dict but we use json schema but is universal understandable lang

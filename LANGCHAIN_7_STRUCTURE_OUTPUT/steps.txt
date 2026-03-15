@@ -1,0 +1,14 @@
+1. Create a new folder
+2. Open in VS Code
+3. Create a new venv(Virtual Environment):
+            python -m venv VirtualEnvironmentName
+4. actiavte venv: 
+           VirtualEnvironmentName\Scripts\Activate
+5. create requirements.txt
+6. install packages from requirements.txt
+            pip install -r requirements.txt
+7. verify langchain installation
+
+8. helps manage dependencies and ensure consistency across different environments
+            pip freeze > requirements.txt
+           
